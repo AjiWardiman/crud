@@ -1,0 +1,26 @@
+{
+  "name": "project123",
+  "version": "1.0.0",
+  "description": "sebuah projek",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "build": "node src/index.js",
+    "migrate": "knex migrate:latest --knexfile src/models/knexfile.js"
+  },
+  "author": "aji",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "latest"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.6.5",
+    "sqlite3": "^5.0.11"
+  }
+}
